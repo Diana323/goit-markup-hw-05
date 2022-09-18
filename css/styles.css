@@ -67,7 +67,73 @@ h1,h2,h3,h4,h5,h6,p,ul {
     padding-top: 200px;
     padding-bottom: 200px;
 }
+.animation{
+    position: relative;
+}
+.position_action{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+}
+.position_action:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(33, 150, 243, 0.8);
+    transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+}
+.text_animation{
+    padding: 63px 24px;
 
+    font-weight: 400px;
+    Font-style: regular;
+    Font-size: 18px;
+    Line-height: 28px;
+    Line-height: 133%;
+     Align: Left Vertical;
+      align: Top;
+      Letter-spacing: 3%;
+    color: #FFFFFF;
+}
+.animation::before{
+    content:"";
+    position: absolute;
+}
+.is_hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.backdrop {
+    width: 600px;
+    height: 500px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+    opacity: 1;
+    visibility: visible;
+    transition: 250ms; opacity: ;
+
+}
+
+.modal {
+Fill: Solid #FFFFFF;
+ Radius: 1px;
+ Offset: 0px, 2px rgba(0, 0, 0, 0.2) ;
+Effect: Drop shadow; Radius: 1px ;
+Offset: 0px, 1px rgba(0, 0, 0, 0.14);
+ Effect: Drop shadow; Radius: 3px;
+ Offset: 0px, 1px rgba(0, 0, 0, 0.12);
+}
 
 .hero {
 
@@ -424,7 +490,6 @@ gap: 10px;
     display: flex;
     align-items: center;
     gap: 30px;
-
 }
 
 .filters {

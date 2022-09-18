@@ -95,7 +95,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
     color: #FFFFFF;
 }
 
-
 .section .bt {
     font-family: 'Roboto';
 
@@ -453,6 +452,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 .wrapper{
 
+
 }
  .box{ 
     display: flex;
@@ -539,7 +539,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
+    
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
