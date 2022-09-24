@@ -6,7 +6,6 @@
 }
 img {
     display: block;
-    max-width: 100%;
     height: auto;
 }
 
@@ -39,9 +38,32 @@ h1,h2,h3,h4,h5,h6,p,ul {
     line-height: 1.17;
     letter-spacing: 0.02em;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
+    
+    position: relative;
+}
+.portfolio_border{
+    border-bottom:  4px solid #2196F3;
+    border-radius: 2px;
+    
+
+}
+.index_border{
+    border-bottom: 4px solid #2196F3;
+     border-radius: 2px;
+      
 }
 
+
+.index_border ::before{
+    content: "";
+    display: block;
+        position: absolute;
+        
+        height: 2px;
+        width: 0;
+    
+}
 
 .main{
     
@@ -69,15 +91,18 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 .animation{
     position: relative;
+    overflow: hidden;
 }
 .position_action{
     position: absolute;
+    
     width: 100%;
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transform: translateY(100px);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     }
 .position_action:hover{
     position: absolute;
@@ -85,10 +110,26 @@ h1,h2,h3,h4,h5,h6,p,ul {
     height: 100%;
     opacity: 1;
     background-color: rgba(33, 150, 243, 0.8);
-    transition-duration: 250ms;
-    transition: y 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-0);
+}
+
+.animation_hover{
+    text-decoration: none;
+    transition: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    width: 370px;
+}
+.animation_hover:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    width: 370px;
     
 }
+ .flex-element:hover,
+.flex-element:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+} 
 .what_we_do{
     position: relative;
     
@@ -98,26 +139,26 @@ h1,h2,h3,h4,h5,h6,p,ul {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 30%;
+    width: 370px;
+    height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
-    opacity: 0.5;
+    opacity: 0;
     transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .applications:hover{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 30%;
+    width: 370px;
+    height: 70px;
     opacity: 1;
     background-color: rgba(47, 48, 58, 0.8);
     transition-duration: 250ms;
     transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text_app{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     text-align: center;
 
     font-weight: 700px;
@@ -587,11 +628,7 @@ a.navigation-footer {
     flex-basis: 370px;
 }
 
-.flex-element:hover,
-.flex-element:focus{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-   
-}
+
 .flex-element-div{
     background: var(--color-milk-);
     border: 1px solid #EEEEEE;
