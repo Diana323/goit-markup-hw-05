@@ -252,8 +252,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
         
        stroke-width: 0;
     
-        fill: currentColor;
-    
+       fill: currentColor;
 }
 
 .modal {
@@ -261,10 +260,24 @@ h1,h2,h3,h4,h5,h6,p,ul {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
- 
+   transition: transform 250ms linear;
    width: 528px;
    height: 581px;
    background-color: #F5F5F5;
+   padding: 40px;
+   border-radius: 4px;
+
+}
+.modal_title{
+Font-size: 20px; 
+Line-height: 23px;
+Letter-spacing: 3%;
+Font-style: Bold;
+font-weight: 700;
+text-align: center;
+
+margin-bottom: 12px;
+color: #212121;
 }
 
 .hero {
