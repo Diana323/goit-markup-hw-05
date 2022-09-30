@@ -26,7 +26,9 @@
         <a href="./index.html" class="logo ul"><span>Web</span>Studio</a>
         <nav class="navigation">
           <ul class="navigation-footer ul block">
-            <li class="item"><a class="list index_border" href="./index.html">Студія</a></li>
+            <li class="item">
+              <a class="list index_border" href="./index.html">Студія</a>
+            </li>
             <li class="item">
               <a class="list" href="./portfolio.html">Портфоліо</a>
             </li>
@@ -37,12 +39,18 @@
           <li class="item">
             <a class="address-nav" href="mailto:info@devstudio.com"
               ><svg class="header_icon_email" width="16" height="12">
-                <use href="./images/icons.svg#icon-email"></use></svg>info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              >info@devstudio.com</a
+            >
           </li>
           <li class="item">
             <a class="address-nav" href="tel:+380961111111"
               ><svg class="header_icon_phone" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -372,7 +380,8 @@
       <div class="footer-section container">
         <div class="wrap_contacts">
           <a href="./index.html" class="footer-logo ul"
-            ><span>Web</span>Studio</a>
+            ><span>Web</span>Studio</a
+          >
           <address>
             <ul class="navigation-footer ul">
               <li>
@@ -397,7 +406,7 @@
         </div>
         <div>
           <h3 class="title__footer">приєднуйтесь</h3>
-          <div>
+          <div class="block_svg">
             <ul class="footer__soc">
               <li class="footer__soc_item">
                 <a href="" class="my_link_footer">
@@ -430,9 +439,32 @@
             </ul>
           </div>
         </div>
+        <div>
+            <h3 class="title__footer">Підпишіться на розсилку</h3>
+       <div class="sing_up">
+        <form>
+            <label>
+                <input
+                type="email"
+                class="footer_form"
+                name="user-email"
+                placeholder="E-mail"
+                required
+              />
+        </label>
+        </form>
+        <div class="send_flex">
+        <button type="submit" class="send">Підписатися
+            <div class="send_flex_element"><svg class="icon_send" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg></div>
+        </button></div>
+       
+       </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal modal_window">
         <button class="button_modal" data-modal-close>
           <svg class="modal_close" width="11" height="11">
@@ -441,9 +473,56 @@
         </button>
         <p class="modal_title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal_form">
-          
-        </form>
-      </div>
+          <label>
+            <span class="input_title">Ім'я</span>
+            <input
+              type="text"
+              class="form_input"
+              name="user-name"
+              placeholder=""
+              required
+            />
+          </label>
+          <label>
+            <span class="input_title">Телефон</span>
+            <input
+              type="tel"
+              class="form_input"
+              name="user-tel"
+              placeholder=""
+              required
+            />
+          </label>
+          <label
+            ><span class="input_title">Пошта</span>
+            <input
+              type="email"
+              class="form_input"
+              name="user-email"
+              placeholder=""
+              required
+            />
+          </label>
+          <div>
+            <label for="user_comment" class="input_title">Коментар</label>
+            <textarea
+              class="modal_text"
+              name="user_comment"
+              id="user_comment"
+              placeholder="Введіть текст"
+              >Введіть текст</textarea>
+          </div>
+       <div class="checkbox_send">
+        <svg class="icon-icon-check" width="16" height="15">
+            <use href="./images/icons.svg#icon-icon-check"></use>
+        </svg>
+           <input  class="input_checkbox"
+            type="submit">
+            Погоджуюся з розсилкою та приймаю
+            <a href="#">Умови договору</a>
+        </div>
+           <div class="checkbox_send_btn">
+           <button type="submit" class="send">Відправити</button>
     </div>
     <script src="./js/modal.js"></script>
   </body>
